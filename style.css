@@ -199,6 +199,7 @@ header .icons #menu-bars{
 
 .home .home-slider .slide .image img{
     width: 100%;
+    border-radius: 50px;
 }
 
 .home .home-slider .slide .content span{
@@ -309,11 +310,11 @@ header .icons #menu-bars{
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* background-image: url(Image/logo1.jpg);
+    /* background-image: url(Image/logo1.jpg); */
     width: 100%;
     height: 40vh;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
  }
 
  .banner h4{
@@ -344,6 +345,10 @@ header .icons #menu-bars{
     border: none;
     outline: none;
     transition: 0.2s;
+ }
+
+ .banner button{
+    background-color: #088178;
  }
 
  .banner button:hover{
@@ -388,8 +393,20 @@ header .icons #menu-bars{
     color: #ffbd27;
 }
 
+.news-normal{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
 #newsletter input{
-    height: 4.7rem;
+    /* height: 4.7rem; */
+    height: 3.125rem;
     padding: 0 1.25em;
     font-size: 14px;
     width: 100%;
@@ -412,7 +429,59 @@ header .icons #menu-bars{
 
 
  /* Footer style start */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    
+}
+
+footer a{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer .follow{
+    
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    
+    
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
 
 
  /* Footer style ends */
@@ -648,6 +717,14 @@ header .icons #menu-bars{
     #product-details .single-pro-details{
         width: 100%;
         
+    }
+
+    .banner{
+        height: 40vh;
+    }
+
+    #newsletter .form{
+        width: 100%;
     }
 
     
