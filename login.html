@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Belleza' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Login </title>
 </head>
+
 <body>
-    <div class="login">login</div>
+
+   
+    
+
+
+
+    <section class="wrapper-login">
+        <div class="box">
+            <div class="form signup">
+                <h5>Signup</h5>
+                <form action="#">
+                    <input type="text" placeholder="Full name" required />
+                    <input type="text" placeholder="Email address" required />
+                    <input type="Password" placeholder="Password" required />
+                    <div class="checkbox">
+                        <input type="checkbox" id="signupCheck">
+                        <label for="signupCheck">I accept all terms & conditions</label>
+                    </div>
+                    <input type="submit" value="Signup" />
+                </form>
+            </div>
+
+            <div class="form login">
+                <h5>Login</h5>
+                <form action="#">
+                    <!-- <input type="text" placeholder="Full name" required /> -->
+                    <input type="text" placeholder="Email address" required />
+                    <input type="Password" placeholder="Password" required />
+
+                    <a href="#">Forgot password?</a>
+                    <input type="submit" value="Login" />
+                </form>
+            </div>
+        </div>
+
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // login page javascript
+        const wrapper = document.querySelector(".wrapper-login");
+        const signupHeader = document.querySelector(".signup h5");
+        const loginHeader = document.querySelector(".login h5");
+
+        loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+        });
+
+        signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+        });
+
+
+
+        
+    </script>
 </body>
+
 </html>
